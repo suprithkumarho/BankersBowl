@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BANKERS BOWL</title>
+<link rel="stylesheet" href="design.css">
+
+<script>
+function result() {
+window.open ('result.html','_self',false)
+
+}
+</script>
+</head>
+<body>
+<h1 align="center">WELCOME TO BANKERS BOWL</h1><br/><br/>
+<h4 align="center">
+<!-- <P>Hi,As per your GPS connection , your present location is </P><br/>
+<div id="labels">
+<label>Place</label>
+</div>
+<div id="textbox">
+<input type="text" value="Bangalore"><br/>
+</div> -->
+<br/><br/>
+<div id="labels">
+<label id="loanLabel">Please select the Type of Loan</label>
+</div>
+<div id="textbox">
+<select id="dropDownList">
+<option>Home Loan</option>
+<option>Car Loan</option>
+<option>Education Loan</option>
+<option>Personal Loan</option>
+<option>Agricultural Loan</option>
+<option>Gold Loan</option>
+</select>
+</div>
+</br></br>
+<input id="submitButton" type="button" onclick="result();" name="Submit" value="Submit"/>
+</h4>
+</body>
+</html>

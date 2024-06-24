@@ -1,0 +1,114 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="design.css">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div id="maps">
+	
+<div class="actions">
+    <div class="button">
+        <label for="gmap_where">Where:</label>
+        <input id="gmap_where" type="text" name="gmap_where" value="ITPL"/></div>
+    <div id="button2" class="button" onclick="findAddress(); return false;">Search for address</div>
+    <div class="button">
+        <label for="gmap_keyword">Keyword (optional):</label>
+        <input id="gmap_keyword" type="text" name="gmap_keyword" /></div>
+    <div class="button">
+        <label for="gmap_type">Type:</label>
+        <select id="gmap_type">
+             <option value="bank">bank</option>
+        </select>
+    </div>
+    <div class="button">
+        <label for="gmap_radius">Radius:</label>
+        <select id="gmap_radius">
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+            <option value="1500">1500</option>
+            <option value="5000">5000</option>
+        </select>
+    </div>
+    <input type="hidden" id="lat" name="lat" value="40.7143528" />
+    <input type="hidden" id="lng" name="lng" value="-74.0059731" />
+    <div id="button1" class="button" onclick="findPlaces(); return false;">Search for objects</div>
+</div>
+<div id="gmap_canvas"></div>
+</div>
+
+<div id="tableData">
+<table border=3>
+<tr><th><font color="white">SL</font></th>
+<td><font color="white">BANK NAME</font></td>
+<td><font color="white">DISTANCE</font></td>
+<td><font color="white">PLACE</font></td>
+<td><font color="white">DURATION</font></td>
+<td><font color="white">RATE OF INTEREST</font></td>
+<td><font color="white">CLICK HERE</font></td>
+</tr>
+<tr>
+<th><font color="white"> 1</font></th>
+<td><font color="white">SBI</font></td>
+<td><font color="white">5KM</font></td>
+<td><font color="white">Yashavantpur</font></td>
+<td><font color="white">1year</font></td>
+<td><font color="white">10.8%</font></td>
+<td><form method="get" action="confirm.jsp">
+    <button type="submit">click</button>
+</form></td>
+</tr>
+<tr>
+<th><font color="white"> 2</font></th>
+<td><font color="white">HDFC</font></td>
+<td><font color="white">2KM</font></td>
+<td><font color="white">JP Nagar</font></td>
+<td><font color="white">2year</font></td>
+<td><font color="white">7.5%</font></td>
+<td><form method="get" action="confirm.jsp">
+    <button type="submit">click</button>
+</form></td>
+</tr>
+<tr>
+<th><font color="white"> 3</font></th>
+<td><font color="white">SBM</font></td>
+<td><font color="white">3KM</font></td>
+<td><font color="white">XYZ</font></td>
+<td><font color="white">3year</font></td>
+<td><font color="white">12.35%</font></td>
+<td><form method="get" action="confirm.jsp">
+    <button type="submit">click</button>
+</form></td>
+</tr>
+<tr>
+<th><font color="white">4</font></th>
+<td><font color="white">INDIAN BANK</font></td>
+<td><font color="white">10KM</font></td>
+<td><font color="white">ABC</font></td>
+<td><font color="white">2year</font></td>
+<td><font color="white">8.0%</font></td>
+<td><form method="get" action="confirm.jsp">
+    <button type="submit">click</button>
+</form></td>
+</tr>
+<tr>
+<th><font color="white"> 5</font></th>
+<td><font color="white">HDBI</font></td>
+<td><font color="white">12KM</font></td>
+<td><font color="white">PQR</font></td>
+<td><font color="white">3year</font></td>
+<td><font color="white">8.8%</font></td>
+<td><form method="get" action="confirm.jsp">
+    <button type="submit">click</button>
+</form></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
